@@ -1,0 +1,26 @@
+head {
+    font-family: 'Roboto Mono', monospace;
+}
+body {
+    background-image: url("file:///C:/Users/Fulmer Laura/Documents/Green Fox/Week 1/topography.png");
+    font-family: 'Roboto Mono', monospace;
+    margin: 0, 30;
+}
+header {
+    background-color: #333333;
+    line-height: 2.5;
+}
+header nav {
+    float: right;
+    padding: 25;
+}
+
+.link {
+    color: #FE149B;
+    padding: 25;
+}
+
+h2 {
+    color: #FE149B;
+}
+
