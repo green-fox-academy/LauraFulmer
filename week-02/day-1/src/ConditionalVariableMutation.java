@@ -4,6 +4,12 @@ public class ConditionalVariableMutation {
         int out = 0;
         // if a is even increment out by one
 
+        if ((a  % 2 ) == 0) {
+            out += 1;
+        } else {
+            out += 0;
+        }
+
 
         System.out.println(out);
 
