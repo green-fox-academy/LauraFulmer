@@ -13,11 +13,14 @@ public class Printer {
         // printer("first", "second", "third", "fourh")
         // ...
 
-        String[] input = {"cat", "dog","bird"};
+        String[] input = {"cat", "dog", "bird"};
+        printer(input);
+    }
 
-        public static String printer(String... mots) {
-            for (String words : mots);
+        public static void printer(String... mots) {
+            for (String words : mots) {
+                System.out.print("\"" + words + "\", ");
+            }
         }
 
-    }
 }
