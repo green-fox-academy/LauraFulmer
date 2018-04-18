@@ -19,7 +19,7 @@ public class DrawPyramid {
             int pyramid = scanner.next.Int();
 
             for (int i = 1; i <= pyramid; i++) {
-                
+
             }
 
     }
