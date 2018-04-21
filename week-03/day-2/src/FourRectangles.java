@@ -10,18 +10,18 @@ public class FourRectangles {
         // draw four different size and color rectangles.
         // avoid code duplication.
 
-        int[] x1 = {20, 80, 140, 200};
-        int[] y1 = {20, 20, 20, 20};
-        int[] x2 = {70, 130, 190, 250};
-        int[] y2 = {70, 70, 70, 70};
+        int[] x = {20, 80, 140, 200};
+        int[] y = {20, 20, 20, 20};
+        int[] width = {50, 50, 50, 50};
+        int[] height = {50, 50, 50, 50};
 
-        drawRectangles(graphics, x1, y1, x2, y2);
+        drawRectangles(graphics, x, y, width, height);
      }
 
-     public static void drawRectangles(Graphics graphics, int[] x1, int[] y1, int[] x2, int[] y2) {
-         for (int i = 1; i < 2; i++) {
+     public static void drawRectangles(Graphics graphics, int[] x, int[] y, int[] width, int[] height) {
+         for (int i = 0; i < 4; i++) {
              graphics.setColor(new Color((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256)));
-             graphics.drawRect(x1[i], y1[i], x2[i], y2[i]);
+             graphics.drawRect(x[i], y[i], width[i], height[i]);
          }
      }
 
