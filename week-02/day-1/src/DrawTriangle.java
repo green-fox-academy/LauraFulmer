@@ -16,10 +16,10 @@ public class DrawTriangle {
         Scanner scanner = new Scanner(System.in);
             int triangle = scanner.nextInt();
 
-        String star = "*";
-        for (int i = 1; i <= triangle; i++ ) {
-              System.out.println(star);
-              star += "*";
+        String star = "";
+        for (int i = 0; i < triangle; i++ ) {
+            star += "*";
+            System.out.println(star);
         }
 
     }
