@@ -23,7 +23,7 @@ public class DrawDiagonal {
                 for (int k = 0; k <= diagonal; k++) {
                     System.out.print("%");
                 }
-                System.out.println("");
+                System.out.print("\n");
             } else {
                 System.out.print("%");
                 for (int j = 0; j <= diagonal - 2; j++) {
@@ -34,7 +34,7 @@ public class DrawDiagonal {
                     }
                 }
                 System.out.print("%");
-                System.out.println();
+                System.out.print("\n");
             }
         }
     }
