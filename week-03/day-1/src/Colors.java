@@ -11,11 +11,11 @@ public class Colors {
         // - In `colors[2]` store the shades of pink:
         //   `"orchid", "violet", "pink", "hot pink"`
 
-        String[][] colors = new String[3][5];
-        colors[0] = {"lime", "forest green", "olive", "pale green", "spring green"};
-        colors[1] = {"orange red", "red", "tomato"};
-        colors[2] = {"orchid", "violet", "pink", "hot pink"};
-
+        String[][] colors = {
+                {"lime", "forest green", "olive", "pale green", "spring green"} ,
+                {"orange red", "red", "tomato"},
+                {"orchid", "violet", "pink", "hot pink"}
+        };
        
     }
 }
