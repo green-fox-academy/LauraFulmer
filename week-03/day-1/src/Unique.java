@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Unique {
     public static void main(String[] args) {
         //  Create a function that takes a list of numbers as a parameter
@@ -7,14 +11,20 @@ public class Unique {
         //  System.out.println(unique(new int[] {1, 11, 34, 11, 52, 61, 1, 34}));
         //  should print: `[1, 11, 34, 52, 61]`
 
-        int[] input = {1, 11, 34, 11, 52, 61, 1, 34};
-    //    System.out.println(unique(input));
-
+        ArrayList<Integer> input;
+        input = new ArrayList<Integer>(1, 11, 34, 11, 52, 61, 1, 34);
+        Arrays.sort(input);
+        System.out.println(unique(input));
     }
- //   public static void unique(String... numbers) {
-   //     int[] new = 0;
-     //   for (int i : numbers.length - 1) {
-       //     new ^= i;
 
+    public static ArrayList<Integer> unique(Integer[] numbers) {
+        ArrayList<Integer> uniqueList = new ArrayList<>();
 
+        for (Integer number : numbers) {
+            if (Collections.frequency(numbers, number) == 1) {
+                uniqueList.add(number);
+            }
+        }
+
+        return uniqueList;
 }
