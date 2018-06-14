@@ -3,13 +3,13 @@ package com.greenfoxacademy.springstart.controllers;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class Greeting {
-    static AtomicLong lastId = new AtomicLong();
 
     private String content;
+    private long id;
 
     public Greeting(long id, String content) {
         this.content = content;
-        this.lastId.incrementAndGet();
+        this.id = id;
     }
 
     public String getContent() {
@@ -20,5 +20,13 @@ public class Greeting {
     public void setContent(String content) {
 
         this.content = content;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

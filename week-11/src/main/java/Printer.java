@@ -1,0 +1,5 @@
+
+
+@SringBootApplication
+public class Printer {
+}
