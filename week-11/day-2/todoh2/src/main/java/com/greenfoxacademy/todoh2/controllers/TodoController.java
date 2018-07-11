@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller(value = "todo")
+@Controller(value = "/todo")
 public class TodoController {
 
     private final TodoRepository todoRepository;
@@ -17,10 +17,10 @@ public class TodoController {
         this.todoRepository = todoRepository;
     }
 
-    @GetMapping(value = {"/", "list"})
+    @GetMapping(value = {"/", "/list"})
     public String worksFine(Model model) {
         model.addAttribute("todos", todoRepository.findAll());
-        return "todolist.html";
+        return "todolist";
     }
 
     @RequestMapping(value = {"/todo/isActive"})

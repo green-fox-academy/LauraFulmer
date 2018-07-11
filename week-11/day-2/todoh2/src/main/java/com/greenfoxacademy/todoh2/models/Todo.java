@@ -9,7 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @AllArgsConstructor
-@NoArgsConstructor
 @Getter
 @Setter
 @Entity
@@ -17,10 +16,10 @@ public class Todo {
 
     @Id
     @GeneratedValue
-    private Long id;
-    private String title;
-    private boolean urgent;
-    boolean done;
+    Long id;
+    String title;
+    boolean urgent = false;
+    boolean done = false;
 
     public Todo() {
     }
