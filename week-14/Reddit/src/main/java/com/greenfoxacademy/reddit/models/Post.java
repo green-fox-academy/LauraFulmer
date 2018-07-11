@@ -5,10 +5,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Getter
 @Setter
@@ -22,7 +21,8 @@ public class Post {
     Long id;
     String title;
     String url;
-    LocalDateTime timestamp;
+    @GeneratedValue
+    Long timestamp = new Date().getTime();
     Long score;
     String owner;
 
