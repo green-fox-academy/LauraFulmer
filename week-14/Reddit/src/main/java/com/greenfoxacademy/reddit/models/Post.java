@@ -21,10 +21,8 @@ public class Post {
     Long id;
     String title;
     String url;
-    @GeneratedValue
     Long timestamp = new Date().getTime();
     Long score;
     String owner;
-
 
 }

@@ -20,7 +20,6 @@ public class PostsController {
         this.postServiceImpl = postServiceImpl;
     }
 
-
     @GetMapping("posts")
     public List<Post> getPosts(@RequestHeader("username") String username) {
         return postServiceImpl.getAllPosts();
