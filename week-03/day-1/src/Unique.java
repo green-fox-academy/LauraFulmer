@@ -11,20 +11,19 @@ public class Unique {
         //  System.out.println(unique(new int[] {1, 11, 34, 11, 52, 61, 1, 34}));
         //  should print: `[1, 11, 34, 52, 61]`
 
-        ArrayList<Integer> input;
-        input = new ArrayList<Integer>(1, 11, 34, 11, 52, 61, 1, 34);
-        Arrays.sort(input);
+        ArrayList<Integer> input = new ArrayList<>();
+        input.addAll(Arrays.asList(1, 11, 34, 11, 52, 61, 1, 34));
+        Collections.sort(input);
         System.out.println(unique(input));
     }
 
-    public static ArrayList<Integer> unique(Integer[] numbers) {
+    public static ArrayList<Integer> unique(ArrayList<Integer> numbers) {
         ArrayList<Integer> uniqueList = new ArrayList<>();
-
-        for (Integer number : numbers) {
-            if (Collections.frequency(numbers, number) == 1) {
-                uniqueList.add(number);
+        for (int i = 0; i < numbers.size(); i++) {
+            if ( uniqueList.contains(numbers.get(i)) == false) {
+                uniqueList.add(numbers.get(i));
             }
         }
-
         return uniqueList;
+    }
 }
